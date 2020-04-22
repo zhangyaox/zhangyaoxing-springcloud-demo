@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangyaoxing.entity.mapper.RoomMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zhangyaoxing.entity.entity.Room">
+        <id column="roomid" property="roomid" />
+        <result column="rmCode" property="rmCode" />
+        <result column="dmTypeId" property="dmTypeId" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        roomid, rmCode, dmTypeId, status
+    </sql>
+
+</mapper>
